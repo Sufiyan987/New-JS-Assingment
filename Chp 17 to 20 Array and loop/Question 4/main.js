@@ -1,10 +1,10 @@
 
-var num = +prompt("Enter a number to show its multiplication table")
-var len = +prompt("Enter length multiplication table")
+var number = +prompt("Enter a number to show its multiplication table")
+var length = +prompt("Enter length multiplication table")
 
-document.write(`Multiplication table of ${num} <br/>`)
-document.write(`Length ${len} <br/> <br/>`);
+document.write(`Multiplication table of ${number} <br/>`)
+document.write(`Length ${length} <br/><br/>`);
 
-for (let i = 1; i <= len; i++) {
-    document.write(`${num} x ${i} = ${num * i} <br/>`)
+for (var i = 1; i <= length; i++) {
+    document.write(`${number} x ${i} = ${number * i} <br/>`)
 }
