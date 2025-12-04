@@ -1,8 +1,12 @@
 
-var studentNames = ["Michael", "John", "Tony"]
-var studentScores = [320, 230, 480]
-var totalMarks = 500
+var A = [24, 53, 78, 91, 12]
+var largest = A[0]
 
-document.write(`Score of ${studentNames[0]} is ${studentScores[0]}. Percentage: ${(studentScores[0]/totalMarks) * 100} <br/>`)
-document.write(`Score of ${studentNames[1]} is ${studentScores[1]}. Percentage: ${(studentScores[1]/totalMarks) * 100} <br/>`)
-document.write(`Score of ${studentNames[2]} is ${studentScores[2]}. Percentage: ${(studentScores[2]/totalMarks) * 100} <br/>`)
+for (var i = 0; i < A.length; i++) {
+    if (A[i] > largest) {
+        largest = A[i]
+    }
+}
+
+document.write("Array: " + A + "<br>")
+document.write("Largest number: " + largest)
